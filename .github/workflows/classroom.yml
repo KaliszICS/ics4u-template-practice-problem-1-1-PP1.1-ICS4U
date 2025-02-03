@@ -13,18 +13,18 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-    - name: PP1_1_test.java
-      id: pp1_1_test-java
+    - name: Test1
+      id: test1
       uses: classroom-resources/autograding-command-grader@v1
       with:
-        test-name: PP1_1_test.java
-        setup-command: javac PP1_1.java PP1_1_Test.java
+        test-name: Test1
+        setup-command: javac PP_1_1.java PP1_1_Test.java
         command: java PP1_1_Test
         timeout: 10
         max-score: 10
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
-        PP1_1_TEST-JAVA_RESULTS: "${{steps.pp1_1_test-java.outputs.result}}"
+        TEST1_RESULTS: "${{steps.test1.outputs.result}}"
       with:
-        runners: pp1_1_test-java
+        runners: test1
