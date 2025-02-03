@@ -18,7 +18,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Test2
-        setup-command: ''
+        setup-command: javac PP1_1 TestPP1_1.java
         command: gradle test
         timeout: 10
         max-score: 10
