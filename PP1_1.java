@@ -1,6 +1,6 @@
 public class PP1_1 {
 
-	public static int(int i) {
+	public static func(int i) {
 		return i;
 	}
 
