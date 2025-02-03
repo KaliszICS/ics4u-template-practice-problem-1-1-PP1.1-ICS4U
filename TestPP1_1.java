@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import java.io.*;
 
-public class PP1_1_Test {
+public class TestPP1_1 {
 
    @Test
    public void testHelloWorld()
