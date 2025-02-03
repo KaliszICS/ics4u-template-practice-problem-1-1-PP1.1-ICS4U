@@ -22,9 +22,19 @@ jobs:
         command: gradle test
         timeout: 10
         max-score: 10
+    - name: Java Test
+      id: java-test
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Java Test
+        setup-command: javac PP1_1.java TestPP1_1.java
+        command: java TestPP1_1
+        timeout: 10
+        max-score: 10
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
         TEST2_RESULTS: "${{steps.test2.outputs.result}}"
+        JAVA-TEST_RESULTS: "${{steps.java-test.outputs.result}}"
       with:
-        runners: test2
+        runners: test2,java-test
