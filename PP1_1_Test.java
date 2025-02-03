@@ -12,6 +12,6 @@ public class PP1_1_Test {
    @Test
    public void testHelloWorld()
    {
-      assertEquals(PP1_1.func(1), 1);
+     assertEquals(PP1_1.func(1), 1);
    }
 }
