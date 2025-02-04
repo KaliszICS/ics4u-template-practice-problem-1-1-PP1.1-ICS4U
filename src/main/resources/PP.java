@@ -1,7 +1,7 @@
-public class PP1_1 {
+public class PP {
 
-	public static void main(final String[] args) {
-		System.out.println("Not the right string, tests will fail!");
+	public static int func(int i) {
+		return 2;
 	}
 
 }
