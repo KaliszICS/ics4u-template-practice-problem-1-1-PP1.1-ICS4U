@@ -1,4 +1,4 @@
-public class PP1_1 {
+public class PP {
 
 	public static int func(int i) {
 		return 2;
