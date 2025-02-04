@@ -83,7 +83,7 @@ public class Review1Test {
      Review1.q5();
 
      // assertion
-     assertEquals("Hello World", bos.toString());
+     assertEquals("Hello World\n", bos.toString());
 
      // undo the binding in System
      System.setOut(originalOut);
