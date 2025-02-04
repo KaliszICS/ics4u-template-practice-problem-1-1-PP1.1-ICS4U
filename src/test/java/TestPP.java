@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupitor.api.Assertions.*;
 
 public class TestPP {
 
