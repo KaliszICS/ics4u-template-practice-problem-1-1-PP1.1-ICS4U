@@ -1,4 +1,4 @@
-public class PP1_1 {
+public class Review1 {
 
 	public static int func(int i) {
 	}
