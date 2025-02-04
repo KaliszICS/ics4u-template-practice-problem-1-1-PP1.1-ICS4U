@@ -18,8 +18,8 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Test 1
-        setup-command: ''
-        command: gradle clean test
+        setup-command: mvn compile
+        command: mvn test
         timeout: 10
         max-score: 10
     - name: Autograding Reporter
